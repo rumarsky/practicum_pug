@@ -1,0 +1,14 @@
+extends template 
+ 
+block nav 
+ 
+    nav
+        +createMenu(dictMenu, 'Главная') 
+     
+block content 
+ 
+    img.big(src= require("./images/" + structures[0].pict)) 
+ 
+    section 
+        p= structures[0].firstP 
+        p= structures[0].secondP 

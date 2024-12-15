@@ -1,0 +1,14 @@
+mixin createMenu(menu, active) 
+    each value, key in menu 
+        if active == key 
+            a.active(href= value)= key 
+        else 
+            a(href= value)= key
+
+mixin sectionBlock(header, image, text)
+  section
+    h3= header
+    img(src= require("./images/" + image))
+    p= text
+      a(href="#") &hellip;
+
